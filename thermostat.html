@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivint® Smart Home Security &amp; Alarm Systems</title>
+    <link rel="stylesheet" href="thermostat-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars fa-2x"></i>
+        <h1>Main Floor Thermostat</h1>
+        <i class="fas fa-cog fa-2x"></i>
+    </header>    
+
+    <main>
+        <section id="temp-display">
+            <p>Cool set to</p>
+            <h1 id="temp" class="temp">74</h1>
+        </section>
+        <section id="more-less">
+            <p class="minus-plus" id="less">-</p>
+            <p class="minus-plus" id="more">+</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="nav-item security" id="security">
+            <i class="fa-regular fa-circle-xmark"></i>
+            <span class="nav-label">Security</span>
+        </div>
+        <div class="nav-item" id="thermostat">
+            <span class="temp">73&deg;</span>
+            <span class="nav-label">Thermostat</span>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-video"></i>
+            <span class="nav-label">Cameras</span>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-toggle-on"></i>
+            <span class="nav-label">Devices</span>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-clock"></i>
+            <span class="nav-label">Activity</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

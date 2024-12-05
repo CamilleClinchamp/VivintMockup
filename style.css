@@ -1,0 +1,200 @@
+*, body {
+    background-color: #58baa9;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #38a190;
+}
+
+main {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.doors-page {
+    position: relative;
+}
+
+#disarmed {
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff; /* White background for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional shadow for better effect */
+    position: relative;
+    cursor: pointer;
+}
+#disarmed::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 10px solid rgba(255, 255, 255, 0.2); /* Creates the transparent outer ring */
+    border-radius: 50%;
+}
+#disarmed i {
+    color: #58baa9;
+    background-color: white;
+}
+
+
+#all-doors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+#doors-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+.doors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doors-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* White background for the button */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: relative;
+    width: 120px;
+    cursor: pointer;
+}
+
+.doors-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 40px;
+    border: 10px solid rgba(255, 255, 255, 0.2); /* Semi-transparent outer ring */
+}
+
+.doors-wrapper i {
+    color: #ffa726; /* Orange color for the lock icon */
+    background-color: white;
+    font-size: 24px; /* Size of the lock icon */
+    margin-right: 10px; /* Space between icon and text */
+    cursor: pointer;
+}
+.garage-wrapper svg {
+    background-color: white;
+    width: 24px; /* Size of the lock icon */
+    height: 24px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.doors-text {
+    color: #ffa726; /* Orange color for the text */
+    background-color: white;
+    font-size: 18px; /* Size of the text */
+    font-weight: 500; /* Medium weight for the text */
+}
+
+.garage-text {
+    margin-right: 10px;
+}
+.garage-wrapper i {
+    margin-right: 0px;
+}
+
+#doors-detail .doors-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2); /* Background color of the toggle */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+}
+#doors-detail .doors-wrapper::before {
+    border: 0;
+}
+#doors-detail .doors-wrapper i {
+    background-color: rgba(255, 255, 255, 0);
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff; /* White circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle i {
+    margin: 0;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the navigation bar */
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners for the bar */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for visual depth */
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Spacing between items */
+    color: #888; /* Light grey color for icons and text */
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 24px; /* Icon size */
+    margin-bottom: 5px; /* Space between icon and label */
+    background-color: white;
+    color: #888;
+}
+
+.nav-item .temp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #888; /* Light teal color for the temperature */
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.nav-item .nav-label {
+    font-size: 14px; /* Size of the label text */
+    color: #888; /* Slightly darker grey for label text */
+    background-color: white;
+}
+
+.security i, .security .nav-label{
+    color: #58baa9; /* Light teal color for the "Security" label to match the icon */
+}

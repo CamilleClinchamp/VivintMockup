@@ -1,0 +1,121 @@
+*, body {
+    background-color: #575757;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#temp-display {
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff; /* White background for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional shadow for better effect */
+    position: relative;
+    cursor: pointer;
+}
+#temp-display::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 20px solid rgba(255, 255, 255, 0.2); /* Creates the transparent outer ring */
+    border-radius: 50%;
+}
+#temp-display p {
+    background-color: white;
+    color: #888;
+    font-size: 25px;
+    margin: 0;
+}
+#temp-display .temp {
+    background-color: rgba(255, 255, 255, 0);
+    color: #65c2da;
+    font-size: 130px;
+    margin: 0;
+}
+
+#more-less {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.minus-plus {
+    margin-top: 50px;
+    font-size: 80px;
+    background-color: #888;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the navigation bar */
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners for the bar */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for visual depth */
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Spacing between items */
+    color: #888; /* Light grey color for icons and text */
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 24px; /* Icon size */
+    margin-bottom: 5px; /* Space between icon and label */
+    background-color: white;
+    color: #888;
+}
+
+.nav-item .temp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #888; /* Light teal color for the temperature */
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.nav-item .nav-label {
+    font-size: 14px; /* Size of the label text */
+    color: #888; /* Slightly darker grey for label text */
+    background-color: white;
+}
+
+.security i, .security .nav-label{
+    color: #58baa9; /* Light teal color for the "Security" label to match the icon */
+}
